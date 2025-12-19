@@ -157,3 +157,49 @@ body {
     margin: 60px auto;
   }
 }
+/* SHOP CARD ENHANCEMENTS */
+.product-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-info {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: rgba(255, 196, 207, 0.9); /* light pink overlay */
+  padding: 15px;
+  text-align: center;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.product-card:hover .product-info {
+  transform: translateY(0);
+}
+
+.product-info h3 {
+  margin: 0 0 8px 0;
+  font-size: 18px;
+}
+
+.product-info .price {
+  color: #111;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.product-info a {
+  display: inline-block;
+  background-color: #111;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.product-info a:hover {
+  background-color: #ff69b4;
+}
