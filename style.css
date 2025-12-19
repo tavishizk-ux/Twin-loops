@@ -1,0 +1,159 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* BODY */
+body {
+  background-color: #fafafa;
+  color: #111111;
+  line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  padding: 60px 20px 30px;
+}
+
+.logo {
+  width: 140px;
+  margin-bottom: 10px;
+}
+
+.established {
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #555;
+}
+
+/* NAVIGATION */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 15px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #111;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #f4c2cf;
+}
+
+/* SECTIONS */
+.section {
+  max-width: 1000px;
+  margin: 80px auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.section p {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* SHOP */
+.products {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.product-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.price {
+  color: #f4c2cf;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+/* BUTTON */
+.product-card a {
+  display: inline-block;
+  text-decoration: none;
+  color: #111;
+  border: 1px solid #111;
+  padding: 10px 25px;
+  font-size: 14px;
+  transition: all 0.3s;
+}
+
+.product-card a:hover {
+  background-color: #111;
+  color: #fff;
+}
+
+/* POLICIES */
+#policies ul {
+  list-style: none;
+  margin-top: 20px;
+}
+
+#policies li {
+  margin: 10px 0;
+  color: #555;
+}
+
+/* FOOTER */
+.footer {
+  background-color: #fdecef;
+  text-align: center;
+  padding: 30px;
+  font-size: 14px;
+  color: #555;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .nav {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .section {
+    margin: 60px auto;
+  }
+}
