@@ -1,1 +1,176 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+}
 
+/* BODY */
+body {
+  background-color: #f9eeee; /* Light pinkish background */
+  color: #111; /* Dark text for readability */
+  line-height: 1.6;
+}
+
+/* HEADER */
+.header {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #ffffff; /* White background for header */
+}
+
+.header .logo {
+  max-width: 200px; /* Limits logo size */
+  height: auto;
+}
+
+.header .established {
+  font-style: italic;
+  color: #666; /* Slightly gray text */
+  margin-top: 10px;
+}
+
+/* NAVIGATION */
+.nav {
+  display: flex;
+  justify-content: center;
+  gap: 30px; /* Space between links */
+  background-color: #ffd9e0; /* Soft pink */
+  padding: 15px 0;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #111;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #ff6f91; /* Pink hover effect */
+}
+
+/* MAIN GRID */
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+/* CARDS */
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+}
+
+/* HERO CARD */
+.hero {
+  grid-column: span 2; /* Makes hero card larger on desktop */
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* WHY HANDMADE SECTION */
+.why-handmade {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  background-color: #fff0f3;
+  gap: 40px;
+}
+
+.why-text {
+  flex: 1 1 300px;
+}
+
+.why-text h2 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.why-text p {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.why-image {
+  flex: 1 1 300px;
+}
+
+.why-image img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* SECTIONS */
+.section {
+  padding: 40px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+}
+
+.section p, .section ul {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.section ul li {
+  margin-bottom: 8px;
+}
+
+/* FOOTER */
+.footer {
+  text-align: center;
+  padding: 30px 20px;
+  background-color: #ffd9e0;
+  color: #111;
+  font-weight: bold;
+}
+
+/* ANIMATIONS */
+.animate {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
