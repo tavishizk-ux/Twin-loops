@@ -174,3 +174,29 @@ body {
     transform: translateY(0);
   }
 }
+
+.hero {
+  grid-column: span 2;
+  height: 420px;
+}
+
+.hero img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.image-card {
+  height: 250px;
+}
+
+.image-card img {
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    grid-column: span 1;
+    height: 300px;
+  }
+}
